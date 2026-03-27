@@ -36,3 +36,19 @@ SELECT
     SUM(deaths) OVER (ORDER BY year) AS cumulative_deaths
 FROM overdose_deaths
 ORDER BY year ASC;
+
+SELECT 
+    CASE 
+        WHEN year BETWEEN 2014 AND 2018 THEN '2014-2018'
+        WHEN year BETWEEN 2019 AND 2024 THEN '2019-2024'
+    END AS period,
+    COUNT(year) AS num_years,
+    SUM(deaths) AS total_deaths,
+    ROUND(AVG(CAST(deaths AS FLOAT)), 1) AS avg_deaths_per_year
+FROM overdose_deaths
+GROUP BY 
+    CASE 
+        WHEN year BETWEEN 2014 AND 2018 THEN '2014-2018'
+        WHEN year BETWEEN 2019 AND 2024 THEN '2019-2024'
+    END
+ORDER BY period ASC;

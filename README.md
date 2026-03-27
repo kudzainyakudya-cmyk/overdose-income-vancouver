@@ -1,22 +1,10 @@
-# Overdose & Income in Vancouver
-
-This project examines whether lower-income neighbourhoods in Vancouver 
-experience higher rates of illicit drug toxicity deaths. Using publicly 
-available data from BC CDC and the City of Vancouver, it maps overdose 
-mortality against neighbourhood income levels across a decade to identify 
-patterns that can inform public health resource allocation.
-
-## Research Question
-Do lower-income neighbourhoods in Vancouver experience higher rates 
-of overdose deaths?
-
-## Data Sources
-- BC Centre for Disease Control — Illicit Drug Toxicity Deaths
-- City of Vancouver Open Data — Local Area Profiles
-
-## Tools
-- SQL (SSMS)
-- Excel
+## Key Findings (In Progress)
+- Vancouver recorded 4,073 overdose deaths between 2014 and 2023
+- 2023 was the deadliest year on record with 656 deaths
+- Average annual deaths nearly doubled between 2014-2018 (249/yr) and 2019-2024 (471/yr)
+- The largest single year increase was 2020 (+70%) coinciding with COVID-19 lockdowns
+- Strathcona, the lowest income neighbourhood ($17,631 median), is located in the heart of the overdose crisis zone
+- Neighbourhood-level overdose data is suppressed by BC CDC — city-level analysis used as proxy
 
 ## Status
- In progress
+Analysis in progress — neighbourhood income data loaded, overdose trends analyzed

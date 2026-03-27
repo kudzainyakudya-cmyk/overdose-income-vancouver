@@ -28,3 +28,11 @@ SELECT
     ) AS pct_change
 FROM overdose_deaths
 ORDER BY year ASC;
+
+-- Query 5: Cumulative deaths since 2014
+SELECT 
+    year,
+    deaths,
+    SUM(deaths) OVER (ORDER BY year) AS cumulative_deaths
+FROM overdose_deaths
+ORDER BY year ASC;
